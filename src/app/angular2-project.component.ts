@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, Routes , ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from '@angular/router';
 import { HomeComponent } from './+home';
+import { RegisterComponent } from './+register';
 import { ReportComponent } from './+report';
 import { EncountersComponent } from './+encounters';
-import { RegisterComponent } from './+register';
 
 @Component({
   moduleId: module.id,
@@ -15,9 +15,9 @@ import { RegisterComponent } from './+register';
 })
 @Routes([
   {path: '/home', component: HomeComponent},
+  {path: '/register', component: RegisterComponent},
   {path: '/report', component: ReportComponent},
   {path: '/encounters', component: EncountersComponent},
-  {path: '/register', component: RegisterComponent}
 ])
 export class Angular2ProjectAppComponent implements OnInit {
   constructor(private router: Router){

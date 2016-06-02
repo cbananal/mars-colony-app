@@ -9,6 +9,8 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
+  title = "Mars Colony"
+  
   constructor() {}
 
   ngOnInit() {

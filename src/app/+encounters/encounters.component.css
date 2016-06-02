@@ -1,0 +1,11 @@
+.encounters-container {
+  width: 70vw;
+  height: 84vh;
+  margin: 0 auto;
+  padding: 40px;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #000;;
+  text-align: center;
+  text-transform: uppercase;
+}

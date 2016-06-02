@@ -1,3 +1,44 @@
-<p>
-  register works!
-</p>
+<!-- <div class="component-container">
+    <div class="register-container">
+    <h1>Register</h1>
+    <form>
+      <label for="name">Name: </label><input type="text"><br>
+      <label for="age">Age: </label><input type="text">
+      <p>Occupation:</p>
+      <select class="occupation-dropdown">
+        <option value="dust-farmer">Dust Farmer</option>
+        <option value="alien-hunter">Alien Huner</option>
+      </select>
+    </form>
+    <button><a [routerLink]="['/encounters']">Check In</a></button>
+  </div> -->
+  <!--end register-container-->
+ <!-- </div> -->
+
+
+
+<div class="component-container">
+  <div class="register-container">
+  <h1>Register</h1>
+  <form #registerForm="ngForm" (ngSubmit)="onSubmit($event)">
+    <div>
+      <label for="name">Name</label>
+      <input ngControl="name" [(ngModel)]="colonist.name" id="name" type="text" required>
+    </div>
+    <div>
+      <label for="name">Age</label>
+      <input ngControl="age" [(ngModel)]="colonist.age" id="age" type="text" required>
+    </div>
+    <div>
+      <label for="occupation">Select Occupation</label>
+
+      <select ngControl="job" [(ngModel)]="colonist.job_id" class="form-control">
+        <option [value]="NO_OCCUPATION_SELECTED">Select an Occupation</option>
+        <option *ngFor="let job of occupations" [value]="job.id" >{{ job.name }}</option>
+      </select>
+
+    </div>
+    <button type="submit" [disabled]="noOccupation || !registerForm.form.valid">Submit</button>
+  </form>
+  </div>
+</div>
