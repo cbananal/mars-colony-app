@@ -1,0 +1,40 @@
+
+/* ================================ */
+/* ---------- Containers ---------- */
+/* ================================ */
+
+
+/* Default / Shared */
+
+.component-container {
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  background:
+    url('../images/planet_mars_bg.jpg');
+  background-size: cover;
+}
+
+/* Home Page */
+
+.home-container {
+  // width: auto;
+  // height: auto;
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+//
+// .register-container {
+//   @include home-container;
+// }
+//
+// .encounters-container {
+//   @include home-container;
+// }
+//
+// .report-container {
+//   @include home-container;
+// }
