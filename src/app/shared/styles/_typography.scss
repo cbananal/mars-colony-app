@@ -1,3 +1,40 @@
+/*===========================*/
+/*------- Font Styles -------*/
+/*===========================*/
+
+/* Open Sans */
+
+@font-face {
+font-family: 'open_sanslight';
+src: url('../fonts/opensans-light-webfont.eot');
+src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+     url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+     url('../fonts/opensans-light-webfont.woff') format('woff'),
+     url('../fonts/opensans-light-webfont.ttf') format('truetype'),
+     url('../fonts/opensans-light-webfont.svg#open_sanslight') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+
+/* Space */
+
+@font-face {
+    font-family: 'a_spaceregular';
+    src: url('../fonts/aspace_demo-webfont.eot');
+    src: url('../fonts/aspace_demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/aspace_demo-webfont.woff2') format('woff2'),
+         url('../fonts/aspace_demo-webfont.woff') format('woff'),
+         url('../fonts/aspace_demo-webfont.ttf') format('truetype'),
+         url('../fonts/aspace_demo-webfont.svg#a_spaceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*===========================*/
+/*-------- Font Sizes -------*/
+/*===========================*/
 html {
   font-size: 16px;
 }
