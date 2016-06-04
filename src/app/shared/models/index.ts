@@ -12,6 +12,14 @@ export interface IOccupation {
 
 }
 
+export interface IEncounter {
+  id: number,
+  date: string,
+  colonist_id: number,
+  atype: string,
+  action: string
+}
+
 export class Encounter {
     constructor (
       public atype: string,

@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
-import { Encounter } from '../models'; /* IOccupation from shared/models/index.ts */
+import { Encounter, IEncounter } from '../models'; /* IOccupation from shared/models/index.ts */
 
 @Injectable()
 export class EncounterService {
@@ -20,9 +20,15 @@ export class EncounterService {
                     .toPromise()
                     .then ( response => response.json().encounter )
                     .catch(this.handleError)
-
   }
 
+  getEncounters() : Promise<IEncounter[]> {
+    /* it's a pattern if you are getting something from DB */
+    return this.http.get(this.encounterUrl)
+                .toPromise()
+                .then(response => response.json().encounters)
+                .catch(this.handleError)
+}
 
   private handleError(error: any){
     console.log('there was an error', error);
