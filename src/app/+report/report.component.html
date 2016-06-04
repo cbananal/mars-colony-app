@@ -10,13 +10,16 @@
       <p>Safety on Mars is your responsibility</p>
     </div>
     <!--end report-heading-->
-    <select>
+    <select class="form-control">>
+      <option [value]="NO_ALIEN_SELECTED">Select alien type</option>
+      <option *ngFor="let list of aliens" [value]="list.type" >{{ list.type }}</option>
     </select>
-    <!--end dropdown-->
+    <form #registerForm="ngForm" (ngSubmit)="onSubmit($event)">
+      <textarea>
 
-    <textarea>
-    </textarea>
-
+      </textarea>
+    </form>
+    <a [routerLink]="['/home']">Submit Report</a>
   </div>
   <!--end report-container-->
 </div>
