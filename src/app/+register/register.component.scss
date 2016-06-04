@@ -1,25 +1,77 @@
-// .register-container {
-//   width: 70vw;
-//   height: 84vh;
-//   margin: 0 auto;
-//   padding: 40px;
-//   font-size: 0.9rem;
-//   color: #fff;
-//   background-color: #000;
-//   text-transform: uppercase;
-// }
+.register-container {
+  padding-top: 80px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-// label {
-//   max-width: 50px;
-//   margin: 20px 20px 20px 0;
-// }
-//
-// input {
-//   width: 90%;
-//   padding: 10px;
-//   margin: 7px 0;
-//   font-size: 1rem;
-//   border: 0;
-//   border-radius: 10px;
-//   display: block;
-// }
+.heading h1 {
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+  text-shadow: 3px 3px #473535;
+}
+
+form {
+  min-width: 350px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 0;
+  margin: 30px 0;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, rgba(198,179,179,0.6), rgba(198,179,179,0.6));
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: block;
+}
+
+select {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 70px;
+  font-family: 'open_sanslight', sans-serif;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+::-webkit-input-placeholder {
+   color: #000;
+   font-family: 'open_sanslight', sans-serif;
+   letter-spacing: 2px;
+}
+
+:-moz-placeholder {
+   color: #000;
+   font-family: 'open_sanslight', sans-serif;
+   letter-spacing: 2px;
+}
+
+:-ms-input-placeholder {
+   color: #000;
+   font-family: 'open_sanslight', sans-serif;
+   letter-spacing: 2px;
+}
+
+button {
+  width: 80%;
+  padding: 15px;
+  color: #d8c3c3;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: 'open_sanslight', sans-serif;
+  text-align: center;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(to bottom, #000, #474747, #000);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #302f2f;
+}
