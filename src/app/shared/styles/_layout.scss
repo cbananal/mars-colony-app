@@ -19,17 +19,22 @@
 /* Home Page */
 
 .home-container {
-  font-size: 0.9rem;
+  height: 100vh;
   color: #fff;
+  font-size: 0.9rem;
   text-align: center;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
+
+/* Register Page */
+
 .register-container {
+  height: 100vh;
   padding-top: 80px;
   color: #fff;
   text-transform: uppercase;
@@ -40,6 +45,9 @@
   align-items: center;
 }
 
+
+/* Encounters Page */
+
 .encounters-container {
   height: 100vh;
   margin: 0 auto;
@@ -48,6 +56,9 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+
+/* Report Page */
 
 .report-container {
   height: 100vh;
