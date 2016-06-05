@@ -1,0 +1,25 @@
+.report-container {
+  .heading {
+    padding-top: 60px;
+  }
+  form {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
+
+.report-form {
+  width: 80%;
+  height: auto;
+  margin-top: 30px;
+  select {
+    margin-bottom: 5px;
+  }
+  textarea {
+    height: 200px;
+    padding: 15px;
+    font-family: 'open_sanslight', sans-serif;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+}
