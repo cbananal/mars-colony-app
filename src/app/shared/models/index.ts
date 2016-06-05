@@ -25,7 +25,7 @@ export class Encounter {
       public atype: string,
       public date: string,
       public action: string,
-      public colonist_id: string
+      public colonist_id: number
     ){}
 }
 
