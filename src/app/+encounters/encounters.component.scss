@@ -1,22 +1,24 @@
-.heading {
-    margin-top: 45px;
-    padding: 20px 10px 0;
-    line-height: 20px;
-    text-align: center;
+.encounters-container {
+  .heading h1 {
+    padding: 55px 10px 0;
+    font-size: 2.2rem;
+    line-height: 45px;
+  }
 }
 
-.reports-container {
+.submitted-reports-container {
   width: 100%;
   height: 300px;
   margin: 20px 0 60px;
+  text-align: left;
+  background-color: #470204;
+  box-shadow: 50px 0 80px #eabf88;
+  opacity: 0.8;
   overflow: scroll;
   overflow-x: hidden;
-  background-color: #470204;
-  opacity: 0.8;
-  box-shadow: 50px 0 80px #eabf88;
 }
 
-ul {
+.submitted-reports-list {
   list-style-type: none;
   padding: 5px 10%;
   white-space: normal;

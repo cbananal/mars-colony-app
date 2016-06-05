@@ -1,11 +1,11 @@
 <div class="component-container">
   <div class="encounters-container">
     <div class="heading">
-      <h1>Encounter</h1>
+      <h1>Recent Encounters</h1>
       <p>See an Alien? Report it!</p>
     </div>
-    <div class="reports-container">
-      <ul>
+    <div class="submitted-reports-container">
+      <ul class="submitted-reports-list">
         <li *ngFor="let list of encounter">
           <p>{{list.date}} - {{list.atype}}</p>
           <p>{{list.action}}</p>
