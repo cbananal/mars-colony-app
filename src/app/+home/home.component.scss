@@ -1,5 +1,5 @@
 .heading h1 {
-  padding: 80px 15px;
+  padding: 115px 15px;
   font-size: 2.6rem;
   letter-spacing: 7px;
   text-shadow: 3px 2px 3px #000;
@@ -9,7 +9,11 @@
 }
 
 .call-to-action {
-  margin-top: 80px;
+  margin-top: 60px;
+  p {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
 }
 
 button {
