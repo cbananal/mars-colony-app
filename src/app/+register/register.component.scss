@@ -1,20 +1,3 @@
-.register-container {
-  padding-top: 80px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.heading h1 {
-  font-size: 2.5rem;
-  letter-spacing: 6px;
-  text-shadow: 3px 3px #473535;
-}
-
 form {
   min-width: 350px;
 }
@@ -58,20 +41,4 @@ select {
    color: #000;
    font-family: 'open_sanslight', sans-serif;
    letter-spacing: 2px;
-}
-
-button {
-  width: 80%;
-  padding: 15px;
-  color: #d8c3c3;
-  font-size: 1.4rem;
-  font-weight: bold;
-  font-family: 'open_sanslight', sans-serif;
-  text-align: center;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  background: linear-gradient(to bottom, #000, #474747, #000);
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px #302f2f;
 }

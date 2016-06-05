@@ -1,14 +1,10 @@
-<!-- <p>
-  encounters works!
-</p> -->
-
 <div class="component-container">
   <div class="encounters-container">
-    <div>
-      <h1 class="encounters-heading">Encounter</h1>
+    <div class="heading">
+      <h1>Encounter</h1>
       <p>See an Alien? Report it!</p>
     </div>
-    <div>
+    <div class="reports-container">
       <ul>
         <li *ngFor="let list of encounter">
           <p>{{list.date}} - {{list.atype}}</p>
@@ -16,11 +12,10 @@
         </li>
       </ul>
     </div>
+    <!--end reports-container-->
     <div>
-      <a [routerLink]="['/report']">Report Encounter</a>
+      <a class="button" [routerLink]="['/report']">Report Encounter</a>
     </div>
-
-
   </div>
   <!--end encounters-container-->
 </div>
