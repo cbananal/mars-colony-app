@@ -1,0 +1,55 @@
+/* ================================ */
+/* -------- Media Queries --------- */
+/* ================================ */
+
+
+/* -------- Tablet --------- */
+
+@media all and (min-width: 600px) {
+
+/* Home Page */
+
+  .home-container {
+    .heading{
+      max-width: 400px;
+      line-height: 55px;
+    }
+  }
+
+
+  /* Report Page */
+
+  .report-container {
+    .heading{
+      padding-top: 70px !important;
+    }
+  }
+
+} //end tablet
+
+
+/* -------- Desktop --------- */
+
+@media all and (min-width: 1000px) {
+
+  /* Encounters Page */
+
+  .encounters-container {
+    .heading{
+      padding-top: 25px;
+    }
+  }
+
+  .report-form {
+    width: 50% !important;
+  }
+
+  /*Report Page */
+
+  .report-container {
+    .heading{
+      padding-top: 95px !important;
+    }
+  }
+
+} //end desktop
